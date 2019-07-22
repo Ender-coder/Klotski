@@ -8,7 +8,7 @@ using namespace std;
 int main(){
 	
 	system("cls");
-	system("title »ªÈİµÀ");
+	system("title Â»ÂªÃˆÃÂµÃ€");
 	system("mode con cols=60 lines=28");
 	
 	chapter a[12];
