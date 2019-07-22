@@ -81,7 +81,7 @@ void printSelectionScreen(chapter *a){
 	system("cls");
 	changeColor(0);
 	gotoxy(X+22, Y-4);
-	cout << "»ªÈÝµÀ";
+	cout << "åŽå®¹é“";
 	
 	initialChapter(a);
 	for(int i = 0; i < 12; i++){
@@ -89,11 +89,11 @@ void printSelectionScreen(chapter *a){
 	}
 	
 	gotoxy(X+20, Y+17);
-	cout << "W        ¡ü";
+	cout << "W        â†‘";
 	gotoxy(X+18, Y+18);
-	cout << "A S D    ¡û¡ý¡ú";
+	cout << "A S D    â†â†“â†’";
 	gotoxy(X+18, Y+20);
-	cout << "space   Ñ¡Ôñ¹Ø¿¨"; 
+	cout << "space   é€‰æ‹©å…³å¡"; 
 	gotoxy(X+45, Y+21);
 	cout << "by Ender";
 	
@@ -104,11 +104,11 @@ void printchapter(chapter *a, int index){
 	if(a[index].status == true) changeColor(2);
 	else changeColor(0);
 	gotoxy(X+11+index%2*16, Y+index/2*3-2);
-	cout << "©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©´";
+	cout << "â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”";
 	gotoxy(X+11+index%2*16, Y+index/2*3-1);
-	cout << "©¦ " << a[index].name << "©¦";
+	cout << "â”‚ " << a[index].name << "â”‚";
 	gotoxy(X+11+index%2*16, Y+index/2*3);
-	cout << "©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼";
+	cout << "â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜";
 	changeColor(0);
 	return;
 }
@@ -116,38 +116,38 @@ void printchapter(chapter *a, int index){
 void printWall(){
 	changeColor(0);
 	gotoxy(X+22, Y-4);
-	cout << "»ªÈÝµÀ";
+	cout << "åŽå®¹é“";
 	gotoxy(X+36, Y+3);
-	cout << "W        ¡ü";
+	cout << "W        â†‘";
 	gotoxy(X+34, Y+4);
-	cout << "A S D    ¡û¡ý¡ú";
+	cout << "A S D    â†â†“â†’";
 	gotoxy(X+34, Y+6);
-	cout << "space  Ëø¶¨/½âËø"; 
+	cout << "space  é”å®š/è§£é”"; 
 	gotoxy(X+36, Y+8);
-	cout << "R    ÖØÐÂ¿ªÊ¼";
+	cout << "R    é‡æ–°å¼€å§‹";
 	gotoxy(X+36, Y+10);
-	cout << "P   »Øµ½Ö÷½çÃæ"; 
+	cout << "P   å›žåˆ°ä¸»ç•Œé¢"; 
 	gotoxy(X+36, Y+12);
 	changeColor(2);
-	cout << "¡ö   Ëø¶¨×´Ì¬";
+	cout << "â–    é”å®šçŠ¶æ€";
 	gotoxy(X+36, Y+14);
 	changeColor(1);
-	cout << "¡ö   Ñ¡Ôñ×´Ì¬";
+	cout << "â–    é€‰æ‹©çŠ¶æ€";
 	gotoxy(X+45, Y+21);
 	changeColor(0);
 	cout << "by Ender";
 	gotoxy(X, Y);
-	printTimes("¡ö", 14);
+	printTimes("â– ", 14);
 	for(int i = 1; i <= 15; i++){
 		gotoxy(X, Y+i);
-		cout << "¡ö";
+		cout << "â– ";
 		printTimes("  ", 12);
-		cout << "¡ö";
+		cout << "â– ";
 	}
 	gotoxy(X, Y+16);
-	printTimes("¡ö", 4);
+	printTimes("â– ", 4);
 	printTimes("  ", 6);
-	printTimes("¡ö", 4);
+	printTimes("â– ", 4);
 	
 	return;
 }
@@ -170,101 +170,101 @@ void printpiece(int x, int y, int index, int color){
 
 void printZF(int x, int y){
 	gotoxy(x, y);
-	cout << "©°©¤©¤©¤©´";
+	cout << "â”Œâ”€â”€â”€â”";
 	gotoxy(x, y+1);
-	cout << "©¦   ©¦";
+	cout << "â”‚   â”‚";
 	gotoxy(x, y+2);
-	cout << "©¦ ÕÅ©¦";
+	cout << "â”‚ å¼ â”‚";
 	gotoxy(x, y+3);
-	cout << "©¦ ·É©¦";
+	cout << "â”‚ é£žâ”‚";
 	gotoxy(x, y+4);
-	cout << "©¦   ©¦";
+	cout << "â”‚   â”‚";
 	gotoxy(x, y+5);
-	cout << "©¸©¤©¤©¤©¼";
+	cout << "â””â”€â”€â”€â”˜";
 	return;
 }
 
 void printCC(int x, int y){
 	gotoxy(x, y);
-	cout << "©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©´";
+	cout << "â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”";
 	gotoxy(x, y+1);
-	cout << "©¦         ©¦";
+	cout << "â”‚         â”‚";
 	gotoxy(x, y+2);
-	cout << "©¦   ²Ü²Ù  ©¦";
+	cout << "â”‚   æ›¹æ“  â”‚";
 	gotoxy(x, y+3);
-	cout << "©¦         ©¦";
+	cout << "â”‚         â”‚";
 	gotoxy(x, y+4);
-	cout << "©¦         ©¦";
+	cout << "â”‚         â”‚";
 	gotoxy(x, y+5);
-	cout << "©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼";
+	cout << "â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜";
 	return;
 }
 
 void printMC(int x, int y){
 	gotoxy(x, y);
-	cout << "©°©¤©¤©¤©´";
+	cout << "â”Œâ”€â”€â”€â”";
 	gotoxy(x, y+1);
-	cout << "©¦   ©¦";
+	cout << "â”‚   â”‚";
 	gotoxy(x, y+2);
-	cout << "©¦ Âí©¦";
+	cout << "â”‚ é©¬â”‚";
 	gotoxy(x, y+3);
-	cout << "©¦ ³¬©¦";
+	cout << "â”‚ è¶…â”‚";
 	gotoxy(x, y+4);
-	cout << "©¦   ©¦";
+	cout << "â”‚   â”‚";
 	gotoxy(x, y+5);
-	cout << "©¸©¤©¤©¤©¼";
+	cout << "â””â”€â”€â”€â”˜";
 	return;
 }
 
 void printHZ(int x, int y){
 	gotoxy(x, y);
-	cout << "©°©¤©¤©¤©´";
+	cout << "â”Œâ”€â”€â”€â”";
 	gotoxy(x, y+1);
-	cout << "©¦   ©¦";
+	cout << "â”‚   â”‚";
 	gotoxy(x, y+2);
-	cout << "©¦ »Æ©¦";
+	cout << "â”‚ é»„â”‚";
 	gotoxy(x, y+3);
-	cout << "©¦ ÖÒ©¦";
+	cout << "â”‚ å¿ â”‚";
 	gotoxy(x, y+4);
-	cout << "©¦   ©¦";
+	cout << "â”‚   â”‚";
 	gotoxy(x, y+5);
-	cout << "©¸©¤©¤©¤©¼";
+	cout << "â””â”€â”€â”€â”˜";
 	return;
 }
 
 void printGY(int x, int y){
 	gotoxy(x, y);
-	cout << "©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©´";
+	cout << "â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”";
 	gotoxy(x, y+1);
-	cout << "©¦   ¹ØÓð  ©¦";
+	cout << "â”‚   å…³ç¾½  â”‚";
 	gotoxy(x, y+2);
-	cout << "©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼";
+	cout << "â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜";
 	return;
 }
 
 void printZY(int x, int y){
 	gotoxy(x, y);
-	cout << "©°©¤©¤©¤©´";
+	cout << "â”Œâ”€â”€â”€â”";
 	gotoxy(x, y+1);
-	cout << "©¦   ©¦";
+	cout << "â”‚   â”‚";
 	gotoxy(x, y+2);
-	cout << "©¦ ÕÔ©¦";
+	cout << "â”‚ èµµâ”‚";
 	gotoxy(x, y+3);
-	cout << "©¦ ÔÆ©¦";
+	cout << "â”‚ äº‘â”‚";
 	gotoxy(x, y+4);
-	cout << "©¦   ©¦";
+	cout << "â”‚   â”‚";
 	gotoxy(x, y+5);
-	cout << "©¸©¤©¤©¤©¼";
+	cout << "â””â”€â”€â”€â”˜";
 	return;
 }
 
 void printXB(int x, int y){
 	gotoxy(x, y);
-	cout << "©°©¤©¤©¤©´";
+	cout << "â”Œâ”€â”€â”€â”";
 	gotoxy(x, y+1);
-	cout << "©¦ ±ø©¦";
+	cout << "â”‚ å…µâ”‚";
 	gotoxy(x, y+2);
-	cout << "©¸©¤©¤©¤©¼";
+	cout << "â””â”€â”€â”€â”˜";
 	return;
 }
 
