@@ -68,9 +68,9 @@ bool click(piece *hrd){
 	erasepiece(X+8, Y+10, 1);
 	printpiece(X+8, Y+13, 1, 2);
 	gotoxy(X+7, Y+20);
-	cout << "¹§Ï²ÄúÍ¨¹ý±¾¹Ø£¡";
+	cout << "æ­å–œæ‚¨é€šè¿‡æœ¬å…³ï¼";
 	gotoxy(X+4, Y+22);
-	cout << "Çë°´»Ø³µ¼ü»Øµ½Ö÷½çÃæ";
+	cout << "è¯·æŒ‰å›žè½¦é”®å›žåˆ°ä¸»ç•Œé¢";
 	getchar();
 	return true;
 }
