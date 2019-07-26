@@ -3,7 +3,7 @@
 
 #include <conio.h>
 #include "../include/print.h"
-#include "../include/piece.h"
+/*#include "../include/piece.h"*/
 using namespace std;
 
 #define X 5
@@ -13,7 +13,7 @@ int choosecontrol(chapter *a); //choose the chapter
 
 bool click(piece *hrd); //contain with main.cpp
 int clickcontrol(piece *hrd); //deal with input
-bool movejudge(piece index, piece i); //Judging whether or not to move
+bool movejudge(piece judge, piece i); //Judging whether or not to move
 
 void space(piece *hrd); //Switch lock and unlock States
 void up(piece *hrd); //Press 'up'
@@ -68,9 +68,9 @@ bool click(piece *hrd){
 	erasepiece(X+8, Y+10, 1);
 	printpiece(X+8, Y+13, 1, 2);
 	gotoxy(X+7, Y+20);
-	cout << "æ­å–œæ‚¨é€šè¿‡æœ¬å…³ï¼";
+	cout << "¹§Ï²ÄúÍ¨¹ý±¾¹Ø£¡";
 	gotoxy(X+4, Y+22);
-	cout << "è¯·æŒ‰å›žè½¦é”®å›žåˆ°ä¸»ç•Œé¢";
+	cout << "Çë°´»Ø³µ¼ü»Øµ½Ö÷½çÃæ";
 	getchar();
 	return true;
 }
@@ -109,8 +109,8 @@ void space(piece *hrd){
 	return;
 }
 
-bool movejudge(piece index, piece i){
-	if(index.rx < i.lx || index.lx > i.rx || index.ry < i.ly || index.ly > i.ry) return true;
+bool movejudge(piece judge, piece i){
+	if(judge.rx < i.lx || judge.lx > i.rx || judge.ry < i.ly || judge.ly > i.ry) return true;
 	else return false;
 }
 

@@ -1,14 +1,12 @@
 #include <iostream>
 #include <windows.h>
-#include "../include/color.h"
-#include "../include/print.h"
 #include "../include/control.h"
 
 using namespace std;
 int main(){
 	
 	system("cls");
-	system("title Â»ÂªÃˆÃÂµÃ€");
+	system("title »ªÈİµÀ");
 	system("mode con cols=60 lines=28");
 	
 	chapter a[12];
